@@ -14,6 +14,8 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import Banner from "@/components/Banner.vue";
 import PopularBldg from "@/components/PopularBldg";
+import axios from 'axios';
+
 
 export default {
   name: "home",
@@ -21,6 +23,17 @@ export default {
     HelloWorld,
     Banner,
     PopularBldg
+  },
+  mounted() {
+    this.fetchData()
+  },
+  methods: {
+    fetchData() {
+      console.log("fetch")
+      axios.get('https://dev.vantiq.cn/api/v1/resources/custom/BaseInfoForHackathon?token=B__1eBCT0MZJFtJkyS1Y_dcFMcuB8O0Tuc77fKYegqs=').then(response => {
+        console.log(response.data);
+      })
+    },
   }
 };
 </script>

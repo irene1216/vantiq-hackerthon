@@ -34,6 +34,7 @@
   </div>
 
   </div>
+  <Single/>
 </div>
 </template>
 
@@ -56,21 +57,26 @@
     }
   }
 </script>
+
 <style scoped>
+  p {
+    margin-bottom: 0;
+  }
+  
+  .single-page {
+    background: #f8f8f8;
+    height: 100vh;
+  }
+  
+  .about {
+    height: 300px;
+  }
 
-p{
-  margin-bottom: 0;
-}
+  .carousel {
+    height: 100%;
+  }
 
-.about{
-  height:300px;
-}
-
-.carousel{
-  height:100%;
-}
-
-.carousel-item{
-  height:100%;
-}
+  .carousel-item {
+    height: 100%;
+  }
 </style>

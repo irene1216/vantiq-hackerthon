@@ -30,6 +30,12 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/Directory.vue")
+    },
+    {
+      path: "/single",
+      name: "single",
+      component: () =>
+        import(/* webpackChunkName: "single" */ "./views/Single.vue")
     }
   ]
 });

@@ -27,11 +27,18 @@ export default {
   mounted() {
     this.fetchData()
   },
+  data(){
+    return {
+      activeID: null,
+      selectedLift: {},
+      lifts: {}
+    }
+  },
   methods: {
     fetchData() {
       console.log("fetch")
       axios.get('https://dev.vantiq.cn/api/v1/resources/custom/BaseInfoForHackathon?token=B__1eBCT0MZJFtJkyS1Y_dcFMcuB8O0Tuc77fKYegqs=').then(response => {
-        console.log(response.data);
+        console.log(response.data.slice(0, 10));
       })
     },
   }

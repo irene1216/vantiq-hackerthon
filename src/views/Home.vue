@@ -1,12 +1,9 @@
 <template>
   <div class="home">
       <Banner/>
-
-    </div>
     <div class="section">
       <Directory/>
     </div>
-
   </div>
 </template>
 

@@ -6,6 +6,9 @@
     <div class="section">
       <PopularBldg/>
     </div>
+    <div class="section">
+      <Directory/>
+    </div>
   </div>
 </template>
 
@@ -13,20 +16,20 @@
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
 import Banner from "@/components/Banner.vue";
-import PopularBldg from "@/components/PopularBldg";
+import Directory from "@/components/Directory.vue";
 
 export default {
   name: "home",
   components: {
     HelloWorld,
     Banner,
-    PopularBldg
+    Directory
   }
 };
 </script>
 
 <style scoped>
-.section{
-  height:600px;
+.section {
+  height: 600px;
 }
 </style>

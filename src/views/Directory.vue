@@ -1,5 +1,5 @@
 <template>
-  <div class="directory">
+  <div class="ok">
     <Directory/>
   </div>
 </template>

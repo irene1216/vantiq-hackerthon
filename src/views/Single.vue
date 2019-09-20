@@ -32,6 +32,7 @@
     </b-carousel>
     </div>
   </div>
+
   </div>
 </div>
 </template>

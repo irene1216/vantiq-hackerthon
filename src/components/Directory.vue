@@ -7,7 +7,7 @@
           <b-card-group deck>
             <div class="lift-card mt-3" v-for="lift in lifts">
               <b-card class="m-3" border-variant="info" align="center">
-                <b-card-text>{{lift.city}}</b-card-text>
+                <b-card-text>{{lift.city}}, {{lift.town}}</b-card-text>
                 <b-card-text>{{lift.building}}</b-card-text>
                 <b-card-text>{{lift.address}}</b-card-text>
                 <b-card-text>{{lift.lift_Name}}</b-card-text>

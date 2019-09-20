@@ -1,15 +1,17 @@
 <template>
   <div class="directory">
-    <h1>Discover the elevators in Shanghai</h1>
+    <h1 class="pt-4 mt-5">Discover the elevators in Shanghai</h1>
       <div class="container">
         <div>
           <b-link style="text-decoration: none;" href="http://localhost:8080/single">
           <b-card-group deck>
             <div class="lift-card mt-3" v-for="lift in lifts">
-              <b-card border-variant="info" align="center">
-                <b-card-text>Number of floors: {{lift.Floor_Count}}</b-card-text>
-                <b-card-text>{{lift.Housing_Estate_Name}}</b-card-text>
+              <b-card class="m-3" border-variant="info" align="center">
+                <b-card-text>{{lift.city}}, {{lift.town}}</b-card-text>
+                <b-card-text>{{lift.building}}</b-card-text>
+                <b-card-text>{{lift.address}}</b-card-text>
                 <b-card-text>{{lift.lift_Name}}</b-card-text>
+                <b-card-text>Number of floors: {{lift.floors}}</b-card-text>
                 <b-card-text>{{lift.Lift_Provider_Code}}</b-card-text>
               </b-card>
             </div>

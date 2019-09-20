@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/directory">Directory</router-link>
+      <router-link to="/single">Single</router-link>
     </div>
     <router-view />
   </div>
@@ -11,6 +12,14 @@
 
 
 <style>
+
+
+@import url('https://fonts.googleapis.com/css?family=Niramit:700|Roboto|Staatliches&display=swap');
+
+body {
+  margin:0;
+}
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

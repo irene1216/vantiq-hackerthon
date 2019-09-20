@@ -34,7 +34,7 @@
   </div>
 
   </div>
-  <Single/>
+  <!-- <Single/> -->
 </div>
 </template>
 
@@ -62,12 +62,12 @@
   p {
     margin-bottom: 0;
   }
-  
+
   .single-page {
     background: #f8f8f8;
     height: 100vh;
   }
-  
+
   .about {
     height: 300px;
   }

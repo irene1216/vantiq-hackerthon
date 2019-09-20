@@ -1,14 +1,21 @@
 <template>
   <div class="directory">
-    <h1>This is the directory page</h1>
-      <div class="mt-3" v-for="lift in lifts">
-        <b-card border-variant="info" align="center">
-          <b-card-text>Number of floors: {{lift.Floor_Count}}</b-card-text>
-          <b-card-text>{{lift.Housing_Estate_Name}}</b-card-text>
-          <b-card-text>{{lift.lift_Name}}</b-card-text>
-          <b-card-text>{{lift.Lift_Provider_Code}}</b-card-text>
-
-        </b-card>
+    <h1>Discover the elevators in Shanghai</h1>
+      <div class="container">
+        <div>
+          <b-link style="text-decoration: none;" href="http://localhost:8080/single">
+          <b-card-group deck>
+            <div class="lift-card mt-3" v-for="lift in lifts">
+              <b-card border-variant="info" align="center">
+                <b-card-text>Number of floors: {{lift.Floor_Count}}</b-card-text>
+                <b-card-text>{{lift.Housing_Estate_Name}}</b-card-text>
+                <b-card-text>{{lift.lift_Name}}</b-card-text>
+                <b-card-text>{{lift.Lift_Provider_Code}}</b-card-text>
+              </b-card>
+            </div>
+          </b-card-group>
+          </b-link>
+        </div>
       </div>
   </div>
 </template>
@@ -44,5 +51,17 @@ export default {
 </script>
 
 <style scoped>
+.lift-card{
+ width:300px;
+}
+
+.card-deck{
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card-text::hover{
+  text-decoration: none;
+}
 
 </style>

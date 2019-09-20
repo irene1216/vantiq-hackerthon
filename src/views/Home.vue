@@ -28,5 +28,6 @@ export default {
 <style scoped>
 .section{
   height:600px;
+  margin-bottom: 5%;
 }
 </style>

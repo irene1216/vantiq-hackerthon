@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    <div class="section">
       <Banner/>
+
     </div>
     <div class="section">
       <Directory/>
     </div>
+
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import Banner from "@/components/Banner.vue";
 import Directory from "@/components/Directory.vue";
 import axios from 'axios';
+
 
 export default {
   name: "home",
@@ -41,13 +43,11 @@ export default {
         this.lifts = response.data.slice(0, 10)
       })
     },
+
   }
 };
 </script>
 
 <style scoped>
-.section {
-  height: 600px;
-  margin-bottom: 5%;
-}
+
 </style>

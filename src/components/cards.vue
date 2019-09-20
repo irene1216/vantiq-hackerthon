@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-      <b-card border-variant="info" header="Info" align="center">
+      <b-card class="card" border-variant="info" header="Info" align="center">
         <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
       </b-card>
   </div>
@@ -18,5 +18,7 @@ export default {
 }
 </script>
 <style>
-
+.card {
+  width: 30px;
+}
 </style>

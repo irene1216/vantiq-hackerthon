@@ -34,9 +34,7 @@ export default {
   },
   methods: {
     fetchData() {
-      console.log("fetch")
       axios.get('https://dev.vantiq.cn/api/v1/resources/custom/BaseInfoForHackathon?token=B__1eBCT0MZJFtJkyS1Y_dcFMcuB8O0Tuc77fKYegqs=').then(response => {
-        console.log(response.data.slice(0, 10));
         this.lifts = response.data.slice(0, 10)
       })
     },

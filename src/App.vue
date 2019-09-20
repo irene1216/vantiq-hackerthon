@@ -1,10 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/directory">Directory</router-link>
-      <router-link to="/single">Single</router-link>
+      <router-link to="/"><h1 style="text-decoration: none;"><strong style="text-decoration: none;">UpLift</strong></h1></router-link>
     </div>
     <router-view />
   </div>
@@ -18,6 +15,10 @@
 
 body {
   margin:0;
+}
+
+h1{
+  color:black;
 }
 
 #app {

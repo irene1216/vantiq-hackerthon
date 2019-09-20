@@ -1,29 +1,19 @@
 <template>
-  <div class="home">
-      <Banner/>
-
-    </div>
-    <div class="section">
-      <Directory/>
-    </div>
-
+  <div class="directory">
+    <h1>This is the directory page</h1>
+      <b-card border-variant="info" header="Info" align="center">
+        <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
+      </b-card>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-import Banner from "@/components/Banner.vue";
-import Directory from "@/components/Directory.vue";
 import axios from 'axios';
 
-
 export default {
-  name: "home",
+  name: "Directory",
   components: {
-    HelloWorld,
-    Banner,
-    Directory
+
   },
   mounted() {
     this.fetchData()
@@ -43,7 +33,6 @@ export default {
         this.lifts = response.data.slice(0, 10)
       })
     },
-
   }
 };
 </script>

@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
+      <router-link to="/directory">Directory</router-link>
     </div>
     <router-view />
   </div>
@@ -10,6 +11,7 @@
 
 
 <style>
+
 
 @import url('https://fonts.googleapis.com/css?family=Niramit:700|Roboto|Staatliches&display=swap');
 
@@ -24,6 +26,7 @@ body {
   text-align: center;
   color: #2c3e50;
 }
+
 #nav {
   padding: 30px;
 }

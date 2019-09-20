@@ -13,3 +13,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .single-page {
+    background: #f8f8f8;
+    height: 100vh;
+  }
+</style>
